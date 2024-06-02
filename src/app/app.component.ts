@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { AddPostComponent } from './add-post/add-post.component';
+import { PostListComponent } from './post-list/post-list.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss'],
+  standalone: true,
+  imports: [
+    AddPostComponent,
+    PostListComponent
+  ]
 })
 export class AppComponent {
   title = 'blog-app';
