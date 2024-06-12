@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AddPostComponent } from './add-post/add-post.component';
 import { PostListComponent } from './post-list/post-list.component';
+import { RouterModule, Routes } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,9 @@ import { PostListComponent } from './post-list/post-list.component';
   standalone: true,
   imports: [
     AddPostComponent,
-    PostListComponent
+    PostListComponent,
+    RouterModule,
+    
   ]
 })
 export class AppComponent {
